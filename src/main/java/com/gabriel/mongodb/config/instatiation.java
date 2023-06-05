@@ -21,7 +21,7 @@ public class instatiation implements CommandLineRunner {
 		userRepository.deleteAll();
 		
 		User gabriel = new User(null, "gabriel", "gabriel@gmai.com");
-		User gb = new User(null, "gb", "gb@gmai.com");
+		User gb = new User(null, "gb", "gb@gmail.com");
 		
 		userRepository.saveAll(Arrays.asList(gabriel, gb));
 	}
