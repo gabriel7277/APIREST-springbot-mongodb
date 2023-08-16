@@ -34,14 +34,14 @@ import com.gabriel.mongodb.repository.UserRepository;
 			postRepository.deleteAll();
 			
 
-			User gabriel = new User(null, "Gabriel Ribeiro", "gabriel@gmail.com");
-			User Gabriel  = new User(null, "Gabriel Fernandes", "gabriel@gmail.com");
+			User gabriel = new User(null, "Gabriel Fernandes", "gabriel@gmail.com");
+			User Gabriel  = new User(null, "Gabriel ", "gabriel@gmail.com");
 			
 			userRepository.saveAll(Arrays.asList(gabriel, Gabriel));
 
 			Post post10 = new Post(null, sdf.parse("22/03/2018"), "Partiu viagem", "Vou viajar para  o Rio de Janeiro.",new AuthorDTO(gabriel));
 
-			Post post20 = new Post(null, sdf.parse("23/03/2018"), "Bom dia", "Acordei feliz hoje!",  new AuthorDTO(Gabriel));
+			Post post20 = new Post(null, sdf.parse("23/03/2018"), "Bom dia", "Acordei feliz hoje!",  new AuthorDTO(gabriel));
 
 			postRepository.saveAll(Arrays.asList(post10, post20));
 			
